@@ -32,7 +32,6 @@ if( !function_exists('array_blend') ) {
 	 * @return array The resulting blended array
 	 */
 	function array_blend( array $arrays, array $keys = null ) {
-		if( !is_array($arrays) ) return array();
 		$out = array();
 
 		foreach( $arrays as $key => $array ) {
@@ -56,9 +55,6 @@ if( !function_exists('array_key_array') ) {
 	 * @return array The flattened array
 	 */
 	function array_key_array( array $arrays, $key ) {
-		if( !is_array($arrays) ) {
-			return array();
-		}
 		$out = array();
 		foreach( $arrays as $i => $array ) {
 			$out[$i] = $array[$key];
