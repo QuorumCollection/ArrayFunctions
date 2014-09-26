@@ -35,5 +35,22 @@ class ArrayFunctionsTest extends PHPUnit_Framework_TestCase {
 
 	}
 
+	public function testArrayBlend() {
+		//@todo: I'm not entirely sure how to test this
+	}
+
+	public function testArrayKeyArray() {
+
+	}
+
+	public function testArrayKeysArray() {
+
+	}
+
+	public function testArrayKeyRefill() {
+
+	}
+
+
 }
  
