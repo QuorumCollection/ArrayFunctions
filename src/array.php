@@ -38,7 +38,7 @@ if( !function_exists('array_blend') ) {
 		foreach( $arrays as $key => $array ) {
 			if( is_array($array) && (is_null($keys) || (in_array($key, $keys))) ) {
 				foreach( $array as $value ) {
-					$out [] = $value;
+					$out[] = $value;
 				}
 			}
 		}
