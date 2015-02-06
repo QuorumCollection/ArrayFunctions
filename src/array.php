@@ -64,7 +64,7 @@ if( !function_exists('array_key_array') ) {
 	}
 }
 
-if( !function_exists('array_blend') ) {
+if( !function_exists('array_keys_array') ) {
 	/**
 	 * Given an array of similarly keyed arrays, returns an array of only the selected keys.
 	 *
