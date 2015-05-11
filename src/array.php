@@ -95,7 +95,7 @@ if( !function_exists('array_key_refill') ) {
 	 * @param  mixed $fill The desired value to fill with
 	 * @return array
 	 */
-	function array_key_refill( array $array, $keys, $fill = array() ) {
+	function array_key_refill( array $array, array $keys, $fill = array() ) {
 		foreach( $keys as $key ) {
 			if( !isset($array[$key]) ) {
 				$array[$key] = $fill;
