@@ -1,6 +1,6 @@
 <?php
 
-class ArrayFunctionsTest extends PHPUnit_Framework_TestCase {
+class ArrayFunctionsTest extends \PHPUnit\Framework\TestCase {
 
 	public function testArrayFlatten() {
 		$this->assertEquals(
@@ -53,4 +53,3 @@ class ArrayFunctionsTest extends PHPUnit_Framework_TestCase {
 
 
 }
- 
