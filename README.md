@@ -1,6 +1,6 @@
 # Quorum Array Functions
 
-[![Build Status](https://travis-ci.org/QuorumCollection/ArrayFunctions.svg?branch=master)](https://travis-ci.org/QuorumCollection/ArrayFunctions)
+[![CI](https://github.com/QuorumCollection/ArrayFunctions/actions/workflows/ci.yml/badge.svg)](https://github.com/QuorumCollection/ArrayFunctions/actions/workflows/ci.yml)
 
 A collection of global `array_*` functions appending to the native PHP set.
 
