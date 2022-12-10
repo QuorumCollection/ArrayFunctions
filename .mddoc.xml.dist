@@ -1,0 +1,24 @@
+<mddoc>
+	<docpage target="README.md">
+
+		<section title="Quorum Array Functions">
+			<badge-poser type="version"/>
+			<badge-poser type="license"/>
+			<badge-github-action name="QuorumCollection/ArrayFunctions" workflow="CI"/>
+
+			<text>A collection of global `array_*` functions appending to the native PHP set.</text>
+
+			<section title="Requirements">
+				<composer-requires/>
+			</section>
+
+			<section title="Installing">
+				<composer-install/>
+			</section>
+
+			<section title="Array Functions">
+				<file name="src/array.php" />
+			</section>
+		</section>
+	</docpage>
+</mddoc>
