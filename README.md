@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/quorum/array-functions/version)](https://packagist.org/packages/quorum/array-functions)
 [![License](https://poser.pugx.org/quorum/array-functions/license)](https://packagist.org/packages/quorum/array-functions)
-[![CI](https://github.com/QuorumCollection/ArrayFunctions/workflows/CI/badge.svg?)](https://github.com/QuorumCollection/ArrayFunctions/actions?query=workflow%3ACI)
+[![ci.yml](https://github.com/QuorumCollection/ArrayFunctions/actions/workflows/ci.yml/badge.svg)](https://github.com/QuorumCollection/ArrayFunctions/actions/workflows/ci.yml)
 
 
 A collection of global `array_*` functions appending to the native PHP set.
