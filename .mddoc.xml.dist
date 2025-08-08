@@ -4,7 +4,7 @@
 		<section title="Quorum Array Functions">
 			<badge-poser type="version"/>
 			<badge-poser type="license"/>
-			<badge-github-action name="QuorumCollection/ArrayFunctions" workflow="CI"/>
+			<badge-github-action name="QuorumCollection/ArrayFunctions" workflow-file="ci.yml"/>
 
 			<text>A collection of global `array_*` functions appending to the native PHP set.</text>
 
