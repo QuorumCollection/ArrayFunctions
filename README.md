@@ -9,7 +9,7 @@ A collection of global `array_*` functions appending to the native PHP set.
 
 ## Requirements
 
-- **php**: >=5.3.0
+- **php**: >=7.2.0
 
 ## Installing
 
