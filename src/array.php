@@ -4,9 +4,9 @@ if( !function_exists('array_flatten') ) {
 	/**
 	 * Given an array, find all the values recursively.
 	 *
-	 * @param  array $array The Array to be Flattened
-	 * @param  bool  $allow_duplicates Should the array allow duplicates
-	 * @return array The resulting array or NULL on failure
+	 * @param  array<array-key, mixed> $array The Array to be Flattened
+	 * @param  bool                     $allow_duplicates Should the array allow duplicates
+	 * @return array<array-key, mixed> The resulting array or NULL on failure
 	 */
 	function array_flatten( array $array, $allow_duplicates = false ) {
 		$it    = new RecursiveIteratorIterator(new RecursiveArrayIterator($array));
@@ -14,8 +14,10 @@ if( !function_exists('array_flatten') ) {
 		foreach( $it as $v ) {
 			if( $allow_duplicates ) {
 				$final[] = $v;
-			} else {
+			} elseif( is_int($v) || is_string($v) ) {
 				$final[$v] = $v;
+			} else {
+				$final[] = $v;
 			}
 		}
 
@@ -27,11 +29,11 @@ if( !function_exists('array_blend') ) {
 	/**
 	 * Given an array of arrays, merges the array's children together.
 	 *
-	 * @param array      $arrays An array of arrays.
-	 * @param array|null $keys The merged array.
-	 * @return array The resulting blended array
+	 * @param array<array-key, mixed>            $arrays An array of arrays.
+	 * @param array<array-key, array-key>|null   $keys The merged array.
+	 * @return array<array-key, mixed> The resulting blended array
 	 */
-	function array_blend( array $arrays, array $keys = null ) {
+	function array_blend( array $arrays, ?array $keys = null ) {
 		$out = array();
 
 		foreach( $arrays as $key => $array ) {
@@ -50,9 +52,9 @@ if( !function_exists('array_key_array') ) {
 	/**
 	 * Given an array of similarly keyed arrays, returns an array of only the values of the key.
 	 *
-	 * @param array      $arrays An array of similarly keyed arrays
-	 * @param int|string $key The desired key
-	 * @return array The flattened array
+	 * @param array<array-key, array<array-key, mixed>> $arrays An array of similarly keyed arrays
+	 * @param array-key                                  $key The desired key
+	 * @return array<array-key, mixed> The flattened array
 	 */
 	function array_key_array( array $arrays, $key ) {
 		$out = array();
@@ -68,9 +70,9 @@ if( !function_exists('array_keys_array') ) {
 	/**
 	 * Given an array of similarly keyed arrays, returns an array of only the selected keys.
 	 *
-	 * @param array            $arrays An array of similarly keyed arrays
-	 * @param array|int|string $keys The key or array of keys to return
-	 * @return array The array of arrays with just the selected keys
+	 * @param array<array-key, array<array-key, mixed>> $arrays An array of similarly keyed arrays
+	 * @param array-key|array<array-key, array-key>     $keys The key or array of keys to return
+	 * @return array<array-key, array<array-key, mixed>> The array of arrays with just the selected keys
 	 */
 	function array_keys_array( array $arrays, $keys ) {
 		$keys = (array)$keys;
@@ -90,10 +92,10 @@ if( !function_exists('array_key_refill') ) {
 	/**
 	 * Given a keyed array, fills any missing values.
 	 *
-	 * @param  array $array A Keyed array
-	 * @param  array $keys The keys that must exist
+	 * @param  array<array-key, mixed> $array A Keyed array
+	 * @param  array<array-key, array-key> $keys The keys that must exist
 	 * @param  mixed $fill The desired value to fill with
-	 * @return array
+	 * @return array<array-key, mixed>
 	 */
 	function array_key_refill( array $array, array $keys, $fill = array() ) {
 		foreach( $keys as $key ) {

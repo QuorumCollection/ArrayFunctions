@@ -34,6 +34,13 @@ class ArrayFunctionsTest extends \PHPUnit\Framework\TestCase {
 		);
 	}
 
+	public function testArrayFlattenPreservesValuesThatCannotBeArrayKeys() {
+		$this->assertSame(
+			array( true, 1.5, null ),
+			array_values(array_flatten(array( true, 1.5, null )))
+		);
+	}
+
 	public function testArrayBlend() {
 		// Test blending arrays without specifying keys
 		$arrays = array(
