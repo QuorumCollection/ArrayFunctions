@@ -4,15 +4,16 @@
 	"license"    : "MIT",
 	"authors"    : [
 		{
-			"name"    : "Jesse Donat",
+			"name"    : "Jesse G. Donat",
 			"role"    : "Developer",
 			"email"   : "donatj@gmail.com",
 			"homepage": "https://donatstudios.com"
 		},
 		{
 			"name"    : "Ray Minge",
+			"email"   : "ray@rayminge.com",
 			"role"    : "Developer",
-			"homepage": "http://oranj.io"
+			"homepage": "https://oranj.io"
 		},
 		{
 			"name"    : "Jon Henderson",
