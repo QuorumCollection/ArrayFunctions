@@ -1,18 +1,24 @@
 {
 	"name"       : "quorum/array-functions",
-	"description": "useful array functions",
+	"description": "Additional global PHP array functions for flattening, merging, selecting, and refilling arrays.",
+	"keywords"   : [
+		"array",
+		"array functions",
+		"array utilities"
+	],
 	"license"    : "MIT",
 	"authors"    : [
 		{
-			"name"    : "Jesse Donat",
+			"name"    : "Jesse G. Donat",
 			"role"    : "Developer",
 			"email"   : "donatj@gmail.com",
 			"homepage": "https://donatstudios.com"
 		},
 		{
 			"name"    : "Ray Minge",
+			"email"   : "ray@rayminge.com",
 			"role"    : "Developer",
-			"homepage": "http://oranj.io"
+			"homepage": "https://oranj.io"
 		},
 		{
 			"name"    : "Jon Henderson",
@@ -21,12 +27,16 @@
 		}
 	],
 	"require": {
-		"php" : ">=7.2.0"
+		"php" : ">=7.4.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "~8|~9|~11"
+		"donatj/mddoc": "^0.14.1",
+		"phpunit/phpunit": "~9|~11"
 	},
 	"autoload"   : {
 		"files": ["src/array.php"]
+	},
+	"config"     : {
+		"sort-packages": true
 	}
 }

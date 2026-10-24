@@ -9,7 +9,7 @@ A collection of global `array_*` functions appending to the native PHP set.
 
 ## Requirements
 
-- **php**: >=7.2.0
+- **php**: >=7.4.0
 
 ## Installing
 
@@ -24,15 +24,15 @@ composer require 'quorum/array-functions'
 ### Function: \array_flatten
 
 ```php
-function array_flatten(array $array [, $allow_duplicates = false])
+function array_flatten(array $array, $allow_duplicates = false)
 ```
 
-##### Parameters:
+##### Parameters
 
 - ***array*** `$array` - The Array to be Flattened
 - ***bool*** `$allow_duplicates` - Should the array allow duplicates
 
-##### Returns:
+##### Return Value
 
 - ***array*** - The resulting array or NULL on failure
 
@@ -41,15 +41,15 @@ Given an array, find all the values recursively.
 ### Function: \array_blend
 
 ```php
-function array_blend(array $arrays [, array $keys = null])
+function array_blend(array $arrays, array $keys = null)
 ```
 
-##### Parameters:
+##### Parameters
 
 - ***array*** `$arrays` - An array of arrays.
 - ***array*** | ***null*** `$keys` - The merged array.
 
-##### Returns:
+##### Return Value
 
 - ***array*** - The resulting blended array
 
@@ -61,12 +61,12 @@ Given an array of arrays, merges the array's children together.
 function array_key_array(array $arrays, $key)
 ```
 
-##### Parameters:
+##### Parameters
 
 - ***array*** `$arrays` - An array of similarly keyed arrays
 - ***int*** | ***string*** `$key` - The desired key
 
-##### Returns:
+##### Return Value
 
 - ***array*** - The flattened array
 
@@ -78,12 +78,12 @@ Given an array of similarly keyed arrays, returns an array of only the values of
 function array_keys_array(array $arrays, $keys)
 ```
 
-##### Parameters:
+##### Parameters
 
 - ***array*** `$arrays` - An array of similarly keyed arrays
 - ***array*** | ***int*** | ***string*** `$keys` - The key or array of keys to return
 
-##### Returns:
+##### Return Value
 
 - ***array*** - The array of arrays with just the selected keys
 
@@ -92,16 +92,16 @@ Given an array of similarly keyed arrays, returns an array of only the selected 
 ### Function: \array_key_refill
 
 ```php
-function array_key_refill(array $array, array $keys [, $fill = array()])
+function array_key_refill(array $array, array $keys, $fill = array())
 ```
 
-##### Parameters:
+##### Parameters
 
 - ***array*** `$array` - A Keyed array
 - ***array*** `$keys` - The keys that must exist
 - ***mixed*** `$fill` - The desired value to fill with
 
-##### Returns:
+##### Return Value
 
 - ***array***
 
