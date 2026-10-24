@@ -26,7 +26,7 @@
 	},
 	"require-dev": {
 		"donatj/mddoc": "^0.14.1",
-		"phpunit/phpunit": "~8|~9|~11"
+		"phpunit/phpunit": "~9|~11"
 	},
 	"autoload"   : {
 		"files": ["src/array.php"]
