@@ -31,4 +31,4 @@ jobs:
         run: ./vendor/bin/phpunit
 
       - name: Verify documentation
-        run: ./vendor/bin/mddoc --dry-run=true .mddoc.xml.dist
+        run: ./vendor/bin/mddoc --dry-run
