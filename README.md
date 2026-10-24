@@ -24,7 +24,7 @@ composer require 'quorum/array-functions'
 ### Function: \array_flatten
 
 ```php
-function array_flatten(array $array, $allow_duplicates = \false)
+function array_flatten(array $array, $allow_duplicates = false)
 ```
 
 ##### Parameters
@@ -41,7 +41,7 @@ Given an array, find all the values recursively.
 ### Function: \array_blend
 
 ```php
-function array_blend(array $arrays, array $keys = \null)
+function array_blend(array $arrays, array $keys = null)
 ```
 
 ##### Parameters
