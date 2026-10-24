@@ -1,6 +1,12 @@
 {
 	"name"       : "quorum/array-functions",
-	"description": "useful array functions",
+	"description": "Additional global PHP array functions for flattening, merging, selecting, and refilling arrays.",
+	"keywords"   : [
+		"array",
+		"array functions",
+		"array utilities",
+		"php"
+	],
 	"license"    : "MIT",
 	"authors"    : [
 		{
@@ -30,5 +36,8 @@
 	},
 	"autoload"   : {
 		"files": ["src/array.php"]
+	},
+	"config"     : {
+		"sort-packages": true
 	}
 }
