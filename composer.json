@@ -24,7 +24,7 @@
 		"php" : ">=7.4.0"
 	},
 	"require-dev": {
-		"donatj/mddoc": "^0.14.0",
+		"donatj/mddoc": "^0.14.1",
 		"phpunit/phpunit": "~8|~9|~11"
 	},
 	"autoload"   : {
